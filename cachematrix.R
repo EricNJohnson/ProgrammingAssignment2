@@ -1,6 +1,4 @@
-@@ -1,15 +1,46 @@
-## Put comments here that give an overall description of what your
-## functions do
+
 ## Programming assignment 2 code by Eric Johnson:  eric@focusNumeric.net
 
 ## Write a short comment describing this function
@@ -16,7 +14,7 @@
 ## If this last command (line 11) is issued more than 1 time, the inverse is pulled out of cache and the message "Getting cached matrix inverse"
 ## is printed on the screen.
 
-makeCacheMatrix <- function(x = matrix()) {
+
 ## This function takes the matrix "mat" and:
 ## 1. set the value of the matrix
 ## 2. get the value of the matrix
@@ -38,10 +36,6 @@ makeCacheMatrix <- function(mat = matrix()) {
 ## This function calculates the matrix inverse using 'solve' if the matrix inverse has not already been calculated.  If it has, the
 ## calculation is skipped and result is pulled from cache.  It also sets the variable matrixInverse
 
-## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
 cacheSolve <- function(mat, ...) {
         matrixInverse <- mat$getInverse()
         if(!is.null(matrixInverse)) {
